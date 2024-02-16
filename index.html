@@ -1,11 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Cost</title>
+
+    <!-- Daisy Ui and Tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--  -->
+    <link rel="stylesheet" href="style/style.css">
+
+
 </head>
-<body>
+<body class="ml-10 mr-10">
+    <!-- header section -->
+    <header>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl">daisyUI</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Item 1</a></li>
+                <li>
+                  <details>
+                    <summary>Parent</summary>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn">Button</a>
+            </div>
+          </div>
+
+    </header>
+    <!-- header section -->
+
+    
+    <main>
+        <!-- header section -->
+        <section class="">
+          <div class="flex justify-center items-center">
+            <div class="w-[60%] flex justify-center">
+              <div class="w-[50%] text-center ">
+                <h1 class="font-extrabold text-6xl">Lets Travel</h1>
+                <p class="mt-4 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, repudiandae.</p>
+                <h3 class="text-3xl font-bold">Total Budget: <span>900</span>$</h3>
+              </div>
+              
+            </div>
+            <div class="w-[50%]">
+              <img class="w-[80%]" src="https://img.freepik.com/free-photo/tourist-with-thumb-up_1368-7035.jpg?w=740&t=st=1708101594~exp=1708102194~hmac=189109f828c7ecaed03d4315dc6be80850bc222cd8979184da8b123c2d477d35" alt="" srcset="">
+            </div>
+          </div>
+
+        </section>
+        <!-- header section -->
+
+
+        <!-- header section -->
+        <section>
+          <div class="grid grid-cols-2 justify-between gap-12 mt-20">
+
+            <div class="grid gap-y-8">
+              <div class="card card-side bg-base-100 shadow-xl">
+                <figure><img src="https://img.freepik.com/free-photo/aerial-view-beautiful-sky-road-top-mountains-with-green-jungle-nan-province-thailand_335224-1063.jpg?w=740&t=st=1708105162~exp=1708105762~hmac=678b1cc6158c3e01e9b5e9de5a9078fb275143af69db078769d0f25985ec70e1" alt="Movie"/></figure>
+                <div class="flex flex-col justify-center items-center w-[100%] gap-4">
+                  <h2 class="text-3xl font-bold">Shjek</h2>
+                  <p class="font-bold text-xl ">Cost: <span>300</span>$</p>
+                  <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-side bg-base-100 shadow-xl">
+                <figure><img src="https://img.freepik.com/premium-photo/lonely-house-isolated-green-beautiful-rocky-meadow_10069-5290.jpg?w=740" alt="Movie"/></figure>
+                <div class="flex flex-col justify-center items-center w-[100%] gap-4">
+                  <h2 class="text-3xl font-bold">Shjek</h2>
+                  <p class="font-bold text-xl">Cost: <span>300</span>$</p>
+                  <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-side bg-base-100 shadow-xl">
+                <figure><img src="https://img.freepik.com/premium-photo/tourist-looking-mountains-scenery_10069-8454.jpg?w=826" alt="Movie"/></figure>
+                <div class="flex flex-col justify-center items-center w-[100%] gap-4">
+                  <h2 class="text-3xl font-bold">Shjek</h2>
+                  <p class="font-bold text-xl">Cost: <span>300</span>$</p>
+                  <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-side bg-base-100 shadow-xl">
+                <figure><img src="https://img.freepik.com/free-photo/aerial-view-beautiful-sky-road-top-mountains-with-green-jungle-nan-province-thailand_335224-1063.jpg?w=740&t=st=1708105162~exp=1708105762~hmac=678b1cc6158c3e01e9b5e9de5a9078fb275143af69db078769d0f25985ec70e1" alt="Movie"/></figure>
+                <div class="flex flex-col justify-center items-center w-[100%] gap-4">
+                  <h2 class="text-3xl font-bold">Shjek</h2>
+                  <p class="font-bold text-xl">Cost: <span>300</span>$</p>
+                  <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- cart section -->
+            <div class="m-10 shadow-2xl p-8">
+              <div>
+                <h1 class="text-4xl text-center mt-10">Cart</h1>
+              </div> 
+              <div class="border-t-2 border-gray-400 mt-10">
+                <h3 class="text-2xl text-center mt-10">Total Cost: <span>0</span>$</h3>
+
+                <div class="flex justify-center mt-5 gap-3">
+                  <button class="btn btn-active btn-neutral">Neutral</button>
+                  <button class="btn btn-active btn-neutral">Neutral</button>
+                  <button class="btn btn-active btn-neutral">Neutral</button>
+                </div>
+                
+              </div>
+
+              <div class="border-t-2 border-gray-500 mt-10">
+                <h3 class="text-2xl text-center font-bold mt-10">Grand Total: <span>0</span>$</h3>
+              </div>
+
+            </div>
+          </div>
+
+
+        </section>
+        <!-- header section -->
+
+        <!-- header section -->
+        <section>
+
+        </section>
+        <!-- header section -->
+
+        <!-- header section -->
+        <section>
+
+        </section>
+        <!-- header section -->
+
+        <!-- header section -->
+        <section>
+
+        </section>
+        <!-- header section -->
+
+    </main>
+
+    <!-- footer section -->
+    <footer>
+
+    </footer>
+
+
+    <!-- java script section -->
     
 </body>
 </html>
