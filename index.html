@@ -73,7 +73,7 @@
               <div class="w-[50%] text-center ">
                 <h1 class="font-extrabold text-6xl">Lets Travel</h1>
                 <p class="mt-4 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, repudiandae.</p>
-                <h3 class="text-3xl font-bold">Total Budget: <span>900</span>$</h3>
+                <h3 class="text-3xl font-bold">Total Budget: <span id="budget">900</span>$</h3>
               </div>
               
             </div>
@@ -160,14 +160,14 @@
               </div>
 
               <div class="all-cat-btn flex justify-center mt-5 gap-3">
-                <button class="btn btn-active btn-neutral calegory-btn">Bus + 100</button>
-                <button class="btn btn-active btn-neutral calegory-btn">train - 200</button>
-                <button class="btn btn-active btn-neutral calegory-btn">Plain + 500</button>
+                <button onclick="grandTotalElement('bus')" class="btn btn-active btn-neutral calegory-btn">Bus + 100</button>
+                <button onclick="grandTotalElement('train')" class="btn btn-active btn-neutral calegory-btn">train - 200</button>
+                <button onclick="grandTotalElement('flight')" class="btn btn-active btn-neutral calegory-btn">Flight + 500</button>
               </div>
                 
 
               <div class="border-t-2 border-gray-500 mt-10">
-                <h3 class="text-2xl text-center font-bold mt-10">Grand Total: <span>0</span>$</h3>
+                <h3 class="text-2xl text-center font-bold mt-10">Grand Total: <span id="grand-total">0</span>$</h3>
               </div>
 
             </div>
